@@ -172,7 +172,7 @@
   .main .main__clock {
     text-align: center;
     position: relative;
-    left: 10px; }
+    left: 0; }
     .main .main__clock img {
       left: 8px;
       width: 280px;
@@ -239,17 +239,25 @@
         text-decoration: line-through; }
   .main .main__count {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
     margin-top: -90px;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    flex-wrap: wrap; }
+    @media (min-width: 670px) {
+      .main .main__count {
+        justify-content: center;
+        flex-direction: row; } }
   .main .main__count_hour_cnt,
   .main .main__count_minut_cnt {
     font-size: 15px;
-    margin-right: 20px;
     text-transform: uppercase;
     position: relative;
     min-width: 70px; }
+    @media (min-width: 670px) {
+      .main .main__count_hour_cnt,
+      .main .main__count_minut_cnt {
+        margin-right: 30px; } }
     @media (min-width: 1024px) {
       .main .main__count_hour_cnt,
       .main .main__count_minut_cnt {
@@ -399,6 +407,7 @@
         color: #ffcc00; }
   .main .main__about-dscr {
     width: 320px;
+    max-width: 100%;
     margin: 0 auto;
     margin-bottom: 30px; }
     @media (min-width: 1024px) {
@@ -409,9 +418,9 @@
       .main .main__about-dscr {
         padding-left: 0; } }
   .main .main__about-item {
-    padding-left: 30px;
+    padding-left: 20px;
     position: relative;
-    font-size: 18px;
+    font-size: 16px;
     width: 280px;
     display: inline-block; }
     @media (min-width: 1024px) {

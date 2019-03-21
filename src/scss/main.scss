@@ -100,7 +100,7 @@
     .main__clock {
         text-align: center;
         position: relative;
-        left: 10px;
+        left: 0;
 
         img {
             left: 8px;
@@ -186,19 +186,28 @@
 
     .main__count {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         text-align: center;
         margin-top: -90px;
         margin-bottom: 40px;
+        flex-wrap: wrap;
+
+        @media #{$small} {
+            justify-content: center;
+            flex-direction: row;
+        }
     }
 
     .main__count_hour_cnt,
     .main__count_minut_cnt {
         font-size: 15px;
-        margin-right: 20px;
         text-transform: uppercase;
         position: relative;
         min-width: 70px;
+
+        @media #{$small} {
+            margin-right: 30px;
+        }
         
         @media #{$big} {
             margin-right: 30px;
@@ -210,6 +219,8 @@
         font-size: 15px;
         text-transform: uppercase;
         position: relative;
+
+        
     }
     
     .main__count-item {
@@ -399,6 +410,7 @@
 
     .main__about-dscr {
         width: 320px;
+        max-width: 100%;
         margin: 0 auto;
         margin-bottom: 30px;
 
@@ -413,9 +425,9 @@
     }
 
     .main__about-item {
-        padding-left: 30px;
+        padding-left: 20px;
         position: relative;
-        font-size: 18px;
+        font-size: 16px;
         width: 280px;
         display: inline-block;
         
