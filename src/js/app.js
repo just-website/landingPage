@@ -71,7 +71,7 @@ import Counter from  './countDown';
         return;
     }
 
-    const counter = new Counter($count, '0-3-10-15'); // в формате "дней-часов-минут-секунд"
+    const counter = new Counter($count, '0-3-0-15'); // в формате "дней-часов-минут-секунд"
     counter.init();
     
 })($('.j-count'));
