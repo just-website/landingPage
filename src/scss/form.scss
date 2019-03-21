@@ -1,0 +1,145 @@
+.form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+
+    .form__overlay {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        background-color: rgba(0, 0, 0, .5);
+    }
+
+    .form__main {
+        width: 100%;
+        max-width: 690px;
+        position: relative;
+        margin: 0 auto;
+        height: auto;
+        top: 90px;
+        box-sizing: border-box;
+        z-index: 3;
+        background-image: url(../../www/img/fon_form.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 20px 10px;
+
+        @media #{$big} {
+            padding: 60px;
+            padding-bottom: 75px;
+        }
+    }
+
+    .form__ttl {
+
+        font-size: 22px;
+        margin-bottom: 30px;
+        padding-left: 15px;
+        max-width: 420px;
+        font-weight: normal;
+        text-transform: uppercase;
+        margin-top: 0;
+        
+        @media #{$big} {
+            font-size: 27px;
+            margin-bottom: 60px;
+            padding-left: 35px;
+        }
+
+        span {
+            color: $yellow-color;
+        }
+
+    }
+    
+    .form__input {
+        font-size: 18px;
+
+        @media #{$big} {
+            font-size: 26px;
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 10px;
+            padding-left: 15px;
+
+            @media #{$big} {
+                margin-bottom: 25px;
+                padding-left: 35px;
+            }
+        }
+
+        input {
+            font-size: 18px;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            margin-bottom: 15px;
+            
+            @media #{$big} {
+                margin-bottom: 35px;
+                padding: 35px;
+                font-size: 30px;
+            }
+        }
+
+
+        &:last-of-type input {
+            margin-bottom: 30px;
+            @media #{$big} {
+                margin-bottom: 85px;
+            }
+        }
+    }
+
+    .form__btn {
+        text-align: center;
+        width: 100%;
+
+        button {
+            font-family: "Rubik Medium";
+            font-size: 24px;
+            line-height: 24px;
+            color: $white-color;
+            text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.46);
+            text-transform: uppercase;
+            padding: 10px 30px;
+            background-color: $yellow-color;
+            border: none;
+            cursor: pointer;
+            transition: .25s;
+            margin-bottom: 40px;
+            
+            @media #{$big} {
+                font-size: 32px;
+                line-height: 32px;
+                padding: 15px 50px;
+            }
+            
+            @media #{$large} {
+                font-size: 40px;
+                padding: 25px 70px;
+                line-height: 40px;
+            }
+    
+            @media #{$xxlarge} {
+                padding: 30px 90px;
+                font-size: 50px;
+                line-height: 50px;
+            }
+            
+            &:active {
+                transition: .25s;
+                background-color: #ffa900;
+            }
+        }
+    }
+}

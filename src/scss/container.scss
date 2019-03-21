@@ -1,0 +1,23 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 20px;
+
+    @media #{$big} {
+        width: 960px;
+        padding: 0;
+    }
+
+    @media #{$large} {
+        width: 1200px;
+    }
+
+    @media #{$xlarge} {
+        width: 1400px;
+    }
+
+    @media #{$xxlarge} {
+        width: 1620px;
+    }
+}

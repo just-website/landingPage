@@ -1,0 +1,28 @@
+//colors 
+$white-color: #FFFFFF;
+$yellow-color: #ffcc00;
+$red-color: #da0000;
+$camo-color: #779136;
+
+//breakepoints
+$xxlarge: "(min-width: 1920px)";
+$xlarge: "(min-width: 1440px)";
+$large: "(min-width: 1280px)";
+$big: "(min-width: 1024px)";
+$medium: "(min-width: 960px)";
+$small: "(min-width: 670px)";
+
+.body {
+    font-family: "Rubik Regular";
+    color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+    background-color: #131211;
+    background-image: url('../../www/img/background.png');
+    background-size: auto 100%;
+    background-position: top center;
+
+    @media #{$xxlarge} {
+        background-size: auto;
+    }
+}

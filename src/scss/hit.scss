@@ -1,0 +1,39 @@
+.hit {
+    .hit-wrapper {
+        background-color: $red-color;
+        display: inline-block;
+        outline: 3px solid $red-color;
+        box-sizing: content-box;
+        border: 5px solid transparent;
+        background-clip: padding-box;
+        border-left: none;
+        padding-left: 40px;
+        
+        @media #{$big} {
+            padding-left: 100px;
+        }
+        
+        @media #{$xxlarge} {
+            padding-left: 150px;
+        }
+    }
+    
+
+    h2 {
+        font-family: "Rubik Regular";
+        font-size: 24px;
+        text-transform: uppercase;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        margin: 0;
+        
+        @media #{$big} {
+            font-size: 30px;
+        }
+        
+        @media #{$xlarge} {
+            font-size: 40px;
+        }
+    }
+}
