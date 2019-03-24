@@ -205,12 +205,9 @@
         width: auto;
         left: 0;
         top: -170px; } }
-    @media (min-width: 1920px) {
+    @media (min-width: 1440px) {
       .main .main__clock-dscr {
-        top: 66%;
-        position: absolute;
-        left: -10px;
-        width: 104%; } }
+        max-width: 500px; } }
     .main .main__clock-dscr p {
       flex-basis: 40%;
       text-align: center;

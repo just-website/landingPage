@@ -142,12 +142,8 @@
             top: -170px;
         }
         
-        @media #{$xxlarge} {
-            top: 66%;
-            position: absolute;
-            left: -10px;
-            // width: 660px;
-            width: 104%;
+        @media #{$xlarge} {
+            max-width: 500px;
         }
         
         p {
