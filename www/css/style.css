@@ -208,6 +208,10 @@
     @media (min-width: 1440px) {
       .main .main__clock-dscr {
         max-width: 500px; } }
+    @media (min-width: 1920px) {
+      .main .main__clock-dscr {
+        max-width: 660px;
+        top: -250px; } }
     .main .main__clock-dscr p {
       flex-basis: 40%;
       text-align: center;
@@ -245,6 +249,9 @@
       .main .main__count {
         justify-content: center;
         flex-direction: row; } }
+    @media (min-width: 1920px) {
+      .main .main__count {
+        margin-top: -170px; } }
   .main .main__count_hour_cnt,
   .main .main__count_minut_cnt {
     font-size: 15px;

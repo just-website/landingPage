@@ -145,6 +145,12 @@
         @media #{$xlarge} {
             max-width: 500px;
         }
+
+        
+        @media #{$xxlarge} {
+            max-width: 660px;
+            top: -250px;
+        }
         
         p {
             flex-basis: 40%;
@@ -191,6 +197,10 @@
         @media #{$small} {
             justify-content: center;
             flex-direction: row;
+        }
+
+        @media #{$xxlarge} {
+            margin-top: -170px;
         }
     }
 
